@@ -4,6 +4,7 @@ const bcrypt=require("bcrypt")
 const {checkRole}=require("../middleware/authorization")
 const jwt=require("jsonwebtoken");
 const { authentication } = require("../middleware/authentication");
+const { BlockModel } = require("../models/blockListModel");
 const userRoute=express.Router();
 require("dotenv").config()
 
